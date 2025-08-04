@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme .container {
+    background-color: #000000;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+body.dark-theme h2 {
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+    display: block;
+}
+
+body.dark-theme .input-group label {
+    color: #bbb;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+body.dark-theme .input-group input {
+    background-color: #6b6b6b;
+    border-color: #000000;
+    color: #fff;
+}
+
+.input-group input:focus {
+    border-color: #373e6c;
+}
+
+body.dark-theme .input-group input:focus {
+    border-color: #ffffff;
+}
+
+button {
+    background-color: #373e6c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+body.dark-theme button {
+    background-color: #000373e6;
+}
+
+body.dark-theme button:hover {
+    background-color: #1900ffe6;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 32px;
+    color: #f39c12;
+    transition: color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+body.dark-theme .theme-toggle {
+    color: #fff700;
+}
+
+.login-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-text a {
+    color: #373e6c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-text a:hover {
+    color: #000;
+}
+
+body.dark-theme .login-text {
+    color: #ddd;
+}
+
+body.dark-theme .login-text a {
+    color: #1900ffe6;
+}
