@@ -11,4 +11,5 @@ function toggleTheme() {
     } else {
         icon.innerHTML = "&#9728;";
     }
+
 }
