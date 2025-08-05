@@ -132,4 +132,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     renderCalendar();
+
 });
