@@ -120,4 +120,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     loadAppointments();
+
 });
