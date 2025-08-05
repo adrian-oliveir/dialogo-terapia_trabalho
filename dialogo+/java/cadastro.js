@@ -15,4 +15,5 @@ function maskCPF(event) {
         value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
     }
     input.value = value;
+
 }
