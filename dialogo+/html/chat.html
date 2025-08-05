@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat com Dr. Adrian | Dialogo+</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-sidebar">
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <div class="gray-avatar-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h2>Dr. Adrian Renan</h2>
+                    <p class="specialty">Psicólogo Clínico | CRP 05/12345</p>
+                    <p class="status online"><i class="fas fa-circle"></i> Online</p>
+                </div>
+            </div>
+
+            <div class="consultation-info">
+                <h3>Próxima Consulta</h3>
+                <div class="next-session">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>Amanhã, 15:00 - 16:00</p>
+                </div>
+                <button class="reschedule-btn">Remarcar Consulta</button>
+                <button class="cancel-btn">Cancelar Consulta</button>
+            </div>
+
+            <div class="quick-actions">
+                <h3>Ações Rápidas</h3>
+                <button class="action-btn">
+                    <i class="fas fa-file-prescription"></i>
+                    Solicitar Receita
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-file-medical"></i>
+                    Solicitar Atestado
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-question-circle"></i>
+                    Dúvidas Frequentes
+                </button>
+            </div>
+        </div>
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <div class="chat-partner">
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h3>Dr. Adrian Renan</h3>
+                        <p class="status">Online agora</p>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="call-btn"><i class="fas fa-phone"></i> Chamada</button>
+                    <button class="video-btn"><i class="fas fa-video"></i> Vídeo</button>
+                    <button class="menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </div>
+
+            <div class="chat-messages">
+                <div class="message-day">Hoje</div>
+
+                <div class="message received">
+                    <div class="message-content">
+                        <p>Bom dia! Como você está se sentindo hoje?</p>
+                    </div>
+                    <div class="message-time">10:15</div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <p>Bom dia, Dr. Adrian! Estou me sentindo um pouco ansioso hoje.</p>
+                    </div>
+                    <div class="message-time">10:16</div>
+                </div>
+
+                <div class="message received">
+                    <div class="message-content">
+                        <p>Entendo. Poderia me contar mais sobre o que está sentindo?</p>
+                    </div>
+                    <div class="message-time">10:20</div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <p>Estou com dificuldade para me concentrar no trabalho e meu coração parece acelerado.</p>
+                    </div>
+                    <div class="message-time">10:22</div>
+                </div>
+
+                <div class="message received">
+                    <div class="message-content">
+                        <p>Vamos trabalhar isso na nossa sessão amanhã. Enquanto isso, tente fazer os exercícios de respiração que combinamos.</p>
+                    </div>
+                    <div class="message-time">10:25</div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <p>Obrigado, doutor. Vou tentar fazer isso agora mesmo.</p>
+                    </div>
+                    <div class="message-time">10:30</div>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <button class="emoji-btn"><i class="far fa-smile"></i></button>
+                <button class="attachment-btn"><i class="fas fa-paperclip"></i></button>
+                <input type="text" placeholder="Digite uma mensagem para o Dr. Adrian...">
+                <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../java/chat.js"></script>
+</body>
+</html>

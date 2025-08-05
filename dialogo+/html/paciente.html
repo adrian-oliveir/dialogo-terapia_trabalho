@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Paciente</title>
+    <link rel="stylesheet" href="../css/paciente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1 id="theme-toggle">Área do Paciente</h1>
+            </div>
+        </header>
+
+        <nav class="sidebar">
+            <ul>
+                <li class="active"><a href="../html/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="../html/pesquisa.html"><i class="fas fa-history"></i> Encontrar</a></li>
+                <li><a href="../html/paciente.html" id="profile-link"><i class="fas fa-user"></i> Perfil</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="card">
+                <h2><i class="fas fa-user-circle"></i> Meu Perfil</h2>
+                <div class="profile-preview">
+                    <img src="img/user-default.jpg" alt="Foto do Perfil" id="profile-thumbnail" class="profile-thumbnail">
+                    <div class="profile-info">
+                        <h3 id="profile-name">Nome do Paciente</h3>
+                        <p id="profile-email">email@exemplo.com</p>
+                    </div>
+                </div>
+                <button class="edit-btn" id="edit-profile-btn">Editar Perfil</button>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-calendar-alt"></i> Agendamentos</h2>
+                <ul class="appointments" id="appointments-list">
+                </ul>
+                <button class="primary-btn" id="new-appointment-btn">Marcar Nova Consulta</button>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-file-medical"></i> Histórico</h2>
+                <ul class="history" id="history-list">
+                    <li>24/04/2024 - Acompanhamento</li>
+                    <li>17/04/2024 - Discussão de metas</li>
+                    <li>10/04/2024 - Sessão de terapia</li>
+                </ul>
+            </section>
+
+            <section class="card video-session">
+                <h2><i class="fas fa-video"></i> Sessões Online</h2>
+                <button class="video-btn">Iniciar Videochamada</button>
+            </section>
+        </main>
+    </div>
+
+    <div class="modal" id="profile-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2><i class="fas fa-user-edit"></i> Editar Perfil</h2>
+            <form id="profile-form">
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="appointment-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="appointment-modal-title"><i class="fas fa-calendar-plus"></i> Marcar Consulta</h2>
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="appointment-date">Data</label>
+                    <input type="date" id="appointment-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-time">Horário</label>
+                    <input type="time" id="appointment-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-doctor">Médico</label>
+                    <input type="text" id="appointment-doctor" required placeholder="Digite o nome do médico">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancelar</button>
+                    <button type="submit" class="save-btn">Salvar Consulta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../java/paciente.js"></script>
+</body>
+</html>
