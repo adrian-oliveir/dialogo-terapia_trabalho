@@ -210,4 +210,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     loadProfessionals();
+
 });
